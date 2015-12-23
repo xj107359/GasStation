@@ -9,6 +9,7 @@ public class Example2Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_example2);
+
         setTitle(R.string.example2);
     }
 }

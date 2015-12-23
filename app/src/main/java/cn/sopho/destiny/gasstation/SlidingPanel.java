@@ -35,10 +35,12 @@ public class SlidingPanel extends LinearLayout {
         borderPaint.setStrokeWidth(5);
     }
 
+    @SuppressWarnings("unused")
     public void setInnerPaint(Paint innerPaint) {
         this.innerPaint = innerPaint;
     }
 
+    @SuppressWarnings("unused")
     public void setBorderPaint(Paint borderPaint) {
         this.borderPaint = borderPaint;
     }

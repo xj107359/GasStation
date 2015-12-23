@@ -1,18 +1,8 @@
 package cn.sopho.destiny.gasstation;
 
 import android.app.Application;
-import android.app.Service;
-import android.os.Vibrator;
-import android.util.Log;
-import android.widget.TextView;
 
-//import com.baidu.location.BDLocation;
-//import com.baidu.location.BDLocationListener;
-//import com.baidu.location.LocationClient;
-//import com.baidu.location.Poi;
 import com.baidu.mapapi.SDKInitializer;
-
-import java.util.List;
 
 /**
  * Created by optiplex9020 on 2015/12/18.
@@ -110,8 +100,6 @@ public class myApplication extends Application {
 
     /**
      * 显示请求字符串
-     *
-     * @param str
      */
 //    public void logMsg(String str) {
 //        try {

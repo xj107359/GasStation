@@ -61,7 +61,7 @@ public class Example1Activity extends AppCompatActivity {
 
     // 定位相关
     private LatLng mCurrentPt = null;   // 定位点
-    private LocationClient mLocClient;
+    private LocationClient mLocClient = null;
     private MyLocationListenner myListener = new MyLocationListenner();
 
     // UI相关
@@ -167,6 +167,7 @@ public class Example1Activity extends AppCompatActivity {
             }
         }
 
+        @SuppressWarnings("unused")
         public void onReceivePoi(BDLocation poiLocation) {
         }
     }
@@ -299,6 +300,7 @@ public class Example1Activity extends AppCompatActivity {
     /**
      * 重新添加Overlay
      */
+    @SuppressWarnings("unused")
     public void resetOverlay(View view) {
         clearOverlay(null);
         initOverlay();
@@ -306,10 +308,15 @@ public class Example1Activity extends AppCompatActivity {
 
     @Override
     protected void onDestroy() {
+        // 退出时删除覆盖物
+        clearOverlay(null);
         // 退出时销毁定位
         mLocClient.stop();
+        mLocClient = null;
         // 关闭定位图层
         mBaiduMap.setMyLocationEnabled(false);
+        mBaiduMap.clear();
+        mBaiduMap = null;
         //在activity执行onDestroy时执行mMapView.onDestroy()，实现地图生命周期管理
         mMapView.onDestroy();
         mMapView = null;
