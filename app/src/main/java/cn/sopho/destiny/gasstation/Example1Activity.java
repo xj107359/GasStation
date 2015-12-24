@@ -66,10 +66,10 @@ public class Example1Activity extends AppCompatActivity {
 
     // UI相关
     private boolean isFirstLoc = true; // 是否首次定位
-    private TextView mStateBar;
-    private SlidingPanel mPopupPanel;
-    private TextView mPopupTitle;
-    private ImageView mPopupImage;
+    private TextView mTvStateBar;
+    private SlidingPanel mPanelPopup;
+    private TextView mTvPopupTitle;
+    private ImageView mIvPopupImage;
 
     // 初始化全局 bitmap 信息，不用时及时 recycle
     BitmapDescriptor bdA = BitmapDescriptorFactory.fromResource(R.mipmap.icon_marka);
@@ -84,18 +84,19 @@ public class Example1Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_example1);
 
-        mStateBar = (TextView) findViewById(R.id.state);
+        mTvStateBar = (TextView) findViewById(R.id.tv_state);
 
-        // 底部sliding
-        mPopupPanel = (SlidingPanel) findViewById(R.id.popup_panel);
-        mPopupTitle = (TextView) findViewById(R.id.popup_title);
-        mPopupImage = (ImageView) findViewById(R.id.popup_image);
-        mPopupPanel.setVisibility(View.GONE);
-        mPopupPanel.setOnClickListener(new View.OnClickListener() {
+        // 隐藏sliding
+        mPanelPopup = (SlidingPanel) findViewById(R.id.panel_popup);
+        mTvPopupTitle = (TextView) findViewById(R.id.tv_popup_title);
+        mIvPopupImage = (ImageView) findViewById(R.id.iv_popup_image);
+        mPanelPopup.setVisibility(View.GONE);
+        mPanelPopup.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                mPopupPanel.setVisibility(View.GONE);
+                mPanelPopup.setVisibility(View.GONE);
             }
         });
+
         // 地图初始化
         mMapView = (MapView) findViewById(R.id.bmapView);
         mBaiduMap = mMapView.getMap();
@@ -176,7 +177,7 @@ public class Example1Activity extends AppCompatActivity {
      * 更新地图状态显示面板
      */
     private void updateMapState() {
-        if (mStateBar == null) {
+        if (mTvStateBar == null) {
             return;
         }
         String state;
@@ -194,7 +195,7 @@ public class Example1Activity extends AppCompatActivity {
         state += "\n";
         MapStatus ms = mBaiduMap.getMapStatus();
         state += String.format("zoom=%.1f rotate=%d overlook=%d", ms.zoom, (int) ms.rotate, (int) ms.overlook);
-        mStateBar.setText(state);
+        mTvStateBar.setText(state);
     }
 
     /**
@@ -281,9 +282,9 @@ public class Example1Activity extends AppCompatActivity {
      * 弹出popup窗口
      */
     public void showPopup(String title, int image) {
-        mPopupTitle.setText(title);
-        mPopupImage.setImageResource(image);
-        mPopupPanel.setVisibility(View.VISIBLE);
+        mTvPopupTitle.setText(title);
+        mIvPopupImage.setImageResource(image);
+        mPanelPopup.setVisibility(View.VISIBLE);
     }
 
     /**

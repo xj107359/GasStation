@@ -3,20 +3,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="bottom"
     tools:context="cn.sopho.destiny.gasstation.Example1Activity">
+    <!--android:gravity="bottom"-->
 
     <LinearLayout
-        android:id="@+id/mainlayout"
+        android:id="@+id/llyt_main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/state"
+            android:id="@+id/tv_state"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:ellipsize="marquee"
             android:lines="3"
+            android:marqueeRepeatLimit="marquee_forever"
             android:text="显示经纬度和地图状态" />
 
         <com.baidu.mapapi.map.MapView
@@ -27,33 +29,29 @@
     </LinearLayout>
 
     <cn.sopho.destiny.gasstation.SlidingPanel
-        android:id="@+id/popup_panel"
+        android:id="@+id/panel_popup"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center_vertical|center_horizontal"
-            android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_popup_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="文本"
+            android:textSize="60sp" />
 
-            <TextView
-                android:id="@+id/popup_title"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="文本"
-                android:textSize="60sp" />
-
-            <ImageView
-                android:id="@+id/popup_image"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:layout_margin="2dp"
-                android:contentDescription="@string/app_name" />
-        </LinearLayout>
+        <ImageView
+            android:id="@+id/iv_popup_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="2dp"
+            android:contentDescription="@string/app_name" />
     </cn.sopho.destiny.gasstation.SlidingPanel>
 
 </RelativeLayout>
