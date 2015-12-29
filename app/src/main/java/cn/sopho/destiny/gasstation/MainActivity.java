@@ -1,29 +1,30 @@
 package cn.sopho.destiny.gasstation;
 
+import android.app.Activity;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+import com.gc.materialdesign.views.LayoutRipple;
+
+public class MainActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button btnGoto1 = (Button)findViewById(R.id.goto1_btn);
-        Button btnGoto2 = (Button)findViewById(R.id.goto2_btn);
+        LayoutRipple lrGoto1 = (LayoutRipple) findViewById(R.id.lr_goto1);
+        LayoutRipple lrGoto2 = (LayoutRipple) findViewById(R.id.lr_goto2);
 
-        btnGoto1.setOnClickListener(new View.OnClickListener() {
+        lrGoto1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, Example1Activity.class);
                 startActivity(intent);
             }
         });
-        btnGoto2.setOnClickListener(new View.OnClickListener() {
+        lrGoto2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, Example2Activity.class);
