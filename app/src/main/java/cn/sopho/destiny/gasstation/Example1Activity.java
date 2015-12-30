@@ -1,5 +1,6 @@
 package cn.sopho.destiny.gasstation;
 
+import android.app.Activity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -27,7 +28,7 @@ import com.baidu.mapapi.map.OverlayOptions;
 import com.baidu.mapapi.model.LatLng;
 import com.baidu.mapapi.model.LatLngBounds;
 
-public class Example1Activity extends AppCompatActivity {
+public class Example1Activity extends Activity {
     // 常量
     @SuppressWarnings("unused")
     private static final String LTAG = Example1Activity.class.getSimpleName();
@@ -264,13 +265,21 @@ public class Example1Activity extends AppCompatActivity {
         mBaiduMap.setOnMarkerClickListener(new BaiduMap.OnMarkerClickListener() {
             public boolean onMarkerClick(final Marker marker) {
                 if (marker == mMarkerHuqiu) {
-                    showPopup(TITLE_HUQIU, R.mipmap.pic_huqiu);
+//                    showPopup(TITLE_HUQIU, R.mipmap.pic_huqiu);
+                    DetailActivity detailActivity = new DetailActivity(Example1Activity.this, R.mipmap.pic_huqiu, TITLE_HUQIU);
+                    detailActivity.show();
                 } else if (marker == mMarkerPanmen) {
-                    showPopup(TITLE_PANMEN, R.mipmap.pic_panmen);
+//                    showPopup(TITLE_PANMEN, R.mipmap.pic_panmen);
+                    DetailActivity detailActivity = new DetailActivity(Example1Activity.this, R.mipmap.pic_panmen, TITLE_PANMEN);
+                    detailActivity.show();
                 } else if (marker == mMarkerZhuozhengyuan) {
-                    showPopup(TITLE_ZHUOZHENGYUAN, R.mipmap.pic_zhuozhengyuan);
+//                    showPopup(TITLE_ZHUOZHENGYUAN, R.mipmap.pic_zhuozhengyuan);
+                    DetailActivity detailActivity = new DetailActivity(Example1Activity.this, R.mipmap.pic_zhuozhengyuan, TITLE_ZHUOZHENGYUAN);
+                    detailActivity.show();
                 } else if (marker == mMarkerHanshansi) {
-                    showPopup(TITLE_HANSHANSI, R.mipmap.pic_hanshansi);
+//                    showPopup(TITLE_HANSHANSI, R.mipmap.pic_hanshansi);
+                    DetailActivity detailActivity = new DetailActivity(Example1Activity.this, R.mipmap.pic_hanshansi, TITLE_HANSHANSI);
+                    detailActivity.show();
                 }
 
                 return true;

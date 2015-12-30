@@ -10,6 +10,6 @@
 
     <style name="AppTheme" parent="AppBaseTheme" />
 
-    <style name="AppBaseTheme" parent="android:Theme.Light"/>
+    <style name="AppBaseTheme" parent="android:Theme.Light.NoTitleBar"/>
 
 </resources>

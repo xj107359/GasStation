@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:materialdesign="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rlyt_back"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#55000000"
+    android:padding="40dp">
+
+    <LinearLayout
+        android:id="@+id/llyt_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:background="@drawable/dialog_background"
+        android:orientation="vertical"
+        android:paddingTop="85dp">
+
+        <ImageView
+            android:id="@+id/iv_popup_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:contentDescription="@string/app_name"
+            android:src="@mipmap/unicorn" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="#FFF"
+            android:orientation="vertical"
+            android:paddingTop="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_popup_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="文本"
+                    android:textColor="#4D4D4D"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llyt_addr"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_popup_addr"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:lines="3"
+                    android:text="地址"
+                    android:textColor="#4D4D4D"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

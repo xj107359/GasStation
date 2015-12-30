@@ -1,5 +1,6 @@
 package cn.sopho.destiny.gasstation;
 
+import android.app.Activity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
@@ -37,11 +38,12 @@ import com.baidu.mapapi.search.sug.OnGetSuggestionResultListener;
 import com.baidu.mapapi.search.sug.SuggestionResult;
 import com.baidu.mapapi.search.sug.SuggestionSearch;
 import com.baidu.mapapi.search.sug.SuggestionSearchOption;
+import com.gc.materialdesign.views.ButtonFlat;
 
 import java.util.ArrayList;
 import java.util.LinkedHashSet;
 
-public class Example2Activity extends AppCompatActivity implements
+public class Example2Activity extends Activity implements
         OnGetPoiSearchResultListener, OnGetSuggestionResultListener {
     // 常量
     @SuppressWarnings("unused")
@@ -142,7 +144,7 @@ public class Example2Activity extends AppCompatActivity implements
             }
         });
 
-        Button mBtnSearch = (Button) findViewById(R.id.btn_search);
+        ButtonFlat mBtnSearch = (ButtonFlat) findViewById(R.id.btn_search);
         mBtnSearch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -181,7 +183,9 @@ public class Example2Activity extends AppCompatActivity implements
 
             // LatLng(double latitude, double longitude)
             mCurrentPt = new LatLng(location.getLatitude(), location.getLongitude());
-            mCurCity = location.getCity();
+            String locCity = location.getCity();
+            if (locCity!=null && !locCity.isEmpty())
+                mCurCity = locCity;
             updateMapState();
 
             MyLocationData locData = new MyLocationData.Builder()
@@ -272,7 +276,9 @@ public class Example2Activity extends AppCompatActivity implements
             Toast.makeText(Example2Activity.this, "抱歉，未找到结果", Toast.LENGTH_SHORT).show();
         } else {
 //            Toast.makeText(Example2Activity.this, result.getName() + ": " + result.getAddress(), Toast.LENGTH_SHORT).show();
-            showPopup(result.getName(), result.getAddress());
+//            showPopup(result.getName(), result.getAddress());
+            DetailActivity detailActivity = new DetailActivity(Example2Activity.this, R.mipmap.unicorn, result.getName().toString(), result.getAddress().toString());
+            detailActivity.show();
         }
     }
 
