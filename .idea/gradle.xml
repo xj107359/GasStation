@@ -13,6 +13,8 @@
             <option value="$PROJECT_DIR$/MaterialDesign-debug" />
             <option value="$PROJECT_DIR$/MaterialDesign-release" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/enhanced-edittext-debug" />
+            <option value="$PROJECT_DIR$/enhanced-edittext-release" />
           </set>
         </option>
       </GradleProjectSettings>

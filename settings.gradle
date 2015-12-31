@@ -1,1 +1,1 @@
-include ':app', ':MaterialDesign-debug', ':MaterialDesign-release'
+include ':app', ':MaterialDesign-debug', ':MaterialDesign-release', ':enhanced-edittext-debug', ':enhanced-edittext-release'

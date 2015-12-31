@@ -39,6 +39,7 @@ import com.baidu.mapapi.search.sug.SuggestionResult;
 import com.baidu.mapapi.search.sug.SuggestionSearch;
 import com.baidu.mapapi.search.sug.SuggestionSearchOption;
 import com.gc.materialdesign.views.ButtonFlat;
+import com.gc.materialdesign.views.ButtonRectangle;
 
 import java.util.ArrayList;
 import java.util.LinkedHashSet;
@@ -144,7 +145,8 @@ public class Example2Activity extends Activity implements
             }
         });
 
-        ButtonFlat mBtnSearch = (ButtonFlat) findViewById(R.id.btn_search);
+//        ButtonFlat mBtnSearch = (ButtonFlat) findViewById(R.id.btn_search);
+        ButtonRectangle mBtnSearch = (ButtonRectangle) findViewById(R.id.btn_search);
         mBtnSearch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -3,6 +3,9 @@ package cn.sopho.destiny.gasstation;
 import android.app.Application;
 
 import com.baidu.mapapi.SDKInitializer;
+import com.joanzapata.iconify.Iconify;
+import com.joanzapata.iconify.fonts.FontAwesomeModule;
+import com.joanzapata.iconify.fonts.MaterialCommunityModule;
 
 /**
  * Created by optiplex9020 on 2015/12/18.
@@ -18,6 +21,10 @@ public class myApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+
+        // 加载android-iconify库
+//        Iconify.with(new FontAwesomeModule());
+        Iconify.with(new MaterialCommunityModule());
 
         // 在使用 SDK 各组间之前初始化 context 信息，传入 ApplicationContext
         SDKInitializer.initialize(this);

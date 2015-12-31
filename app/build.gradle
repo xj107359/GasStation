@@ -55,4 +55,10 @@ dependencies {
     debugCompile project(':MaterialDesign-debug')
     releaseCompile project(':MaterialDesign-release')
     compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.joanzapata.iconify:android-iconify-fontawesome:2.1.1'
+    compile 'com.joanzapata.iconify:android-iconify:2.1.1'
+    compile 'org.androidannotations:androidannotations:3.3.2'
+    compile 'com.joanzapata.iconify:android-iconify-material-community:2.1.1'
+    debugCompile project(':enhanced-edittext-debug')
+    releaseCompile project(':enhanced-edittext-release')
 }
