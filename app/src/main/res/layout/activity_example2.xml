@@ -27,46 +27,31 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="2dp"
-            android:layout_gravity="center_horizontal"
-            android:gravity="center"
-            android:orientation="horizontal">
+            android:layout_height="55dp"
+            android:gravity="center_vertical|fill_horizontal"
+            android:orientation="horizontal"
+            android:padding="5dp">
 
             <android.widget.EnhancedEditText
                 android:id="@+id/et_radius"
+                style="@style/EnhancedEditText"
                 android:layout_width="wrap_content"
-                android:layout_height="36dp"
+                android:layout_height="match_parent"
                 android:gravity="center"
                 android:hint="范围"
-                android:maxLines="1"
                 android:inputType="number"
+                android:maxLines="1"
                 android:singleLine="true"
                 android:text="2000"
+                enhancededittext:prefixColor="@color/colorPrimary"
                 enhancededittext:prefixIcon="mdi-map-marker-radius"
                 enhancededittext:suffixText="m" />
-            <!--enhancededittext:prefixIcon="fa-tachometer"-->
-
-            <!--<EditText-->
-            <!--android:id="@+id/et_radius"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="match_parent"-->
-            <!--android:gravity="center"-->
-            <!--android:maxLines="1"-->
-            <!--android:numeric="integer"-->
-            <!--android:singleLine="true"-->
-            <!--android:text="2000" />-->
-
-            <!--<TextView-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="match_parent"-->
-            <!--android:gravity="center"-->
-            <!--android:text="米" />-->
 
             <AutoCompleteTextView
                 android:id="@+id/actv_searchkey"
-                android:layout_width="match_parent"
-                android:layout_height="36dp"
+                style="@style/EnhancedEditText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center"
                 android:hint="搜索内容"
@@ -77,25 +62,9 @@
             <com.gc.materialdesign.views.ButtonRectangle
                 android:id="@+id/btn_search"
                 android:layout_width="wrap_content"
-                android:layout_height="44dp"
-                android:layout_centerInParent="true"
-                android:background="#1E88E5"
+                android:layout_height="50dp"
+                android:background="@color/colorPrimary"
                 android:text="搜索" />
-
-            <!--<com.gc.materialdesign.views.ButtonFlat-->
-            <!--android:id="@+id/btn_search"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="match_parent"-->
-            <!--android:layout_centerInParent="true"-->
-            <!--android:layout_marginLeft="5dp"-->
-            <!--android:text="搜索"-->
-            <!--android:textColor="#ffffff" />-->
-
-            <!--<Button-->
-            <!--android:id="@+id/btn_search"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="match_parent"-->
-            <!--android:text="搜索" />-->
         </LinearLayout>
 
         <com.baidu.mapapi.map.MapView

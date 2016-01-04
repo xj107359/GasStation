@@ -1,11 +1,13 @@
 package cn.sopho.destiny.gasstation;
 
 import android.app.Activity;
+import android.content.res.Resources;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
+import android.view.Window;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
@@ -78,6 +80,7 @@ public class Example2Activity extends Activity implements
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_example2);
 
@@ -145,7 +148,6 @@ public class Example2Activity extends Activity implements
             }
         });
 
-//        ButtonFlat mBtnSearch = (ButtonFlat) findViewById(R.id.btn_search);
         ButtonRectangle mBtnSearch = (ButtonRectangle) findViewById(R.id.btn_search);
         mBtnSearch.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -160,9 +162,11 @@ public class Example2Activity extends Activity implements
 //                            .city(editCity.getText().toString())
 //                            .keyword(editSearchKey.getText().toString())
 //                            .pageNum(loadIndex));
-                    mPoiSearch.searchNearby((new PoiNearbySearchOption()).location(mCurrentPt)
-                            .radius(Integer.parseInt(mEtRadius.getText().toString()))
-                            .keyword(mActvSearchkey.getText().toString()).pageCapacity(10).pageNum(loadIndex));
+                    if (mCurrentPt!=null && mActvSearchkey!=null) {
+                        mPoiSearch.searchNearby((new PoiNearbySearchOption()).location(mCurrentPt)
+                                .radius(Integer.parseInt(mEtRadius.getText().toString()))
+                                .keyword(mActvSearchkey.getText().toString()).pageCapacity(10).pageNum(loadIndex));
+                    }
                 } else {
                     Toast.makeText(Example2Activity.this, "请输入要查询的内容！", Toast.LENGTH_LONG).show();
                 }
