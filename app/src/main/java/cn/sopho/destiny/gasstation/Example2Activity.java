@@ -148,7 +148,7 @@ public class Example2Activity extends Activity implements
             }
         });
 
-        ButtonRectangle mBtnSearch = (ButtonRectangle) findViewById(R.id.btn_search);
+        final ButtonRectangle mBtnSearch = (ButtonRectangle) findViewById(R.id.btn_search);
         mBtnSearch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -162,7 +162,7 @@ public class Example2Activity extends Activity implements
 //                            .city(editCity.getText().toString())
 //                            .keyword(editSearchKey.getText().toString())
 //                            .pageNum(loadIndex));
-                    if (mCurrentPt!=null && mActvSearchkey!=null) {
+                    if (mCurrentPt != null && mActvSearchkey != null) {
                         mPoiSearch.searchNearby((new PoiNearbySearchOption()).location(mCurrentPt)
                                 .radius(Integer.parseInt(mEtRadius.getText().toString()))
                                 .keyword(mActvSearchkey.getText().toString()).pageCapacity(10).pageNum(loadIndex));
@@ -190,7 +190,7 @@ public class Example2Activity extends Activity implements
             // LatLng(double latitude, double longitude)
             mCurrentPt = new LatLng(location.getLatitude(), location.getLongitude());
             String locCity = location.getCity();
-            if (locCity!=null && !locCity.isEmpty())
+            if (locCity != null && !locCity.isEmpty())
                 mCurCity = locCity;
             updateMapState();
 

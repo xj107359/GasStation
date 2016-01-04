@@ -27,16 +27,16 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="55dp"
+            android:layout_height="wrap_content"
             android:gravity="center_vertical|fill_horizontal"
-            android:orientation="horizontal"
-            android:padding="5dp">
+            android:orientation="horizontal">
 
             <android.widget.EnhancedEditText
                 android:id="@+id/et_radius"
                 style="@style/EnhancedEditText"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginLeft="5dp"
                 android:gravity="center"
                 android:hint="范围"
                 android:inputType="number"
@@ -51,7 +51,8 @@
                 android:id="@+id/actv_searchkey"
                 style="@style/EnhancedEditText"
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginLeft="5dp"
                 android:layout_weight="1"
                 android:gravity="center"
                 android:hint="搜索内容"
@@ -62,7 +63,7 @@
             <com.gc.materialdesign.views.ButtonRectangle
                 android:id="@+id/btn_search"
                 android:layout_width="wrap_content"
-                android:layout_height="50dp"
+                android:layout_height="54dp"
                 android:background="@color/colorPrimary"
                 android:text="搜索" />
         </LinearLayout>

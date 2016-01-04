@@ -12,7 +12,7 @@
 
     <style name="AppBaseTheme" parent="android:Theme.Light" />
 
-    <style name="EnhancedEditText" parent="android:Theme.Light">
+    <style name="EnhancedEditText" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>

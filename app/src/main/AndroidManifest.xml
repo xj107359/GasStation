@@ -47,7 +47,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".Example1Activity" />
-        <activity android:name=".Example2Activity" />
+        <activity
+            android:name=".Example2Activity"
+            android:theme="@style/EnhancedEditText" />
 
         <service
             android:name="com.baidu.location.f"
