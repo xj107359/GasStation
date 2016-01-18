@@ -2,144 +2,144 @@
 <items version="2" >
 
     <item
-        jar="D:\workspace\android\GasStation\app\libs\baidumapapi_map_v3_6_1.jar"
+        jar="D:\workspace\android\github\GasStation\app\libs\locSDK_6.13.jar"
         jumboMode="false"
         revision="23.0.2"
-        sha1="23ebff6260f4903de73a88f877f7c32025205c53">
-        <dex dex="D:\workspace\android\GasStation\app\build\intermediates\pre-dexed\release\baidumapapi_map_v3_6_1_bee14f95f924179995f3cd0a76e9f85183c97d95.jar" />
+        sha1="2cdb37444b41b42e1ce5a8a27e5d3c22e1c57479">
+        <dex dex="D:\workspace\android\github\GasStation\app\build\intermediates\pre-dexed\debug\locSDK_6.13_3a0e435365303b95b12e2816d0b84e613a86d80c.jar" />
     </item>
     <item
-        jar="D:\workspace\android\GasStation\app\build\intermediates\exploded-aar\GasStation\enhanced-edittext-release\unspecified\jars\classes.jar"
+        jar="D:\workspace\android\github\GasStation\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\jars\classes.jar"
         jumboMode="false"
         revision="23.0.2"
-        sha1="d64ad14ba4cbcd22c62f79b2f31acb1ee21f45a8">
-        <dex dex="D:\workspace\android\GasStation\app\build\intermediates\pre-dexed\release\GasStation-enhanced-edittext-release-unspecified_1c49ed472085e5cde024478d1fdaa1293c244a98.jar" />
+        sha1="5c5699834e9722f1c288fea2de82725d078ba127">
+        <dex dex="D:\workspace\android\github\GasStation\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.1.1_abdee850544127f9459000bca32e4d4273d31345.jar" />
     </item>
     <item
-        jar="C:\Users\optiplex9020\.gradle\caches\modules-2\files-2.1\org.androidannotations\androidannotations\3.3.2\706cdedef47f934b9f6627cc3dd6db0a752a47e4\androidannotations-3.3.2.jar"
+        jar="D:\workspace\android\github\GasStation\app\build\intermediates\exploded-aar\GasStation\MaterialDesign-debug\unspecified\jars\classes.jar"
         jumboMode="false"
         revision="23.0.2"
-        sha1="706cdedef47f934b9f6627cc3dd6db0a752a47e4">
-        <dex dex="D:\workspace\android\GasStation\app\build\intermediates\pre-dexed\release\androidannotations-3.3.2_a4baefd6d747987793bf94b007ca9e5b720c8e01.jar" />
+        sha1="1aa0ad68ac761a963460ebdae22c512ab99546a5">
+        <dex dex="D:\workspace\android\github\GasStation\app\build\intermediates\pre-dexed\debug\GasStation-MaterialDesign-debug-unspecified_7debb2863dd1c5d596b3e57887b85940f6f414dc.jar" />
+    </item>
+    <item
+        jar="D:\workspace\android\github\GasStation\app\libs\baidumapapi_util_v3_6_1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="0f0b934deaefab0513860d85cd1f4bcd83fc1003">
+        <dex dex="D:\workspace\android\github\GasStation\app\build\intermediates\pre-dexed\debug\baidumapapi_util_v3_6_1_b7d0c93d2539caa2cfb03415d552bdf57b9719ba.jar" />
+    </item>
+    <item
+        jar="D:\workspace\android\github\GasStation\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
+        <dex dex="D:\workspace\android\github\GasStation\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.1.1_15be22fb7afc81bad4ca9bb5aaa032fb7bd56ef7.jar" />
+    </item>
+    <item
+        jar="D:\workspace\android\github\GasStation\app\libs\baidumapapi_search_v3_6_1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="ae35daa343eece79419b1491c64ffe84c3707c50">
+        <dex dex="D:\workspace\android\github\GasStation\app\build\intermediates\pre-dexed\debug\baidumapapi_search_v3_6_1_85cfcb97c3dcecc8357908ce0f8219ba28320349.jar" />
+    </item>
+    <item
+        jar="D:\workspace\android\github\GasStation\app\build\intermediates\exploded-aar\com.joanzapata.iconify\android-iconify-fontawesome\2.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="4decf26d94403923b7a3362a9ec5c96af29647f9">
+        <dex dex="D:\workspace\android\github\GasStation\app\build\intermediates\pre-dexed\debug\com.joanzapata.iconify-android-iconify-fontawesome-2.1.1_3b57cb39aa1552ce58ac407c98c29571dd3b3eea.jar" />
+    </item>
+    <item
+        jar="D:\workspace\android\github\GasStation\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\libs\internal_impl-23.1.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
+        <dex dex="D:\workspace\android\github\GasStation\app\build\intermediates\pre-dexed\debug\internal_impl-23.1.1_85cf6061256bb3d0342713f189502a123e1860be.jar" />
+    </item>
+    <item
+        jar="D:\workspace\android\github\GasStation\app\build\intermediates\exploded-aar\com.joanzapata.iconify\android-iconify\2.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="3e9db26c95288c1954e7de86d9e94e1259fb608b">
+        <dex dex="D:\workspace\android\github\GasStation\app\build\intermediates\pre-dexed\debug\com.joanzapata.iconify-android-iconify-2.1.1_080a28c5c3aafb22772e69cb5f33a7669dd0b08b.jar" />
+    </item>
+    <item
+        jar="D:\workspace\android\github\GasStation\app\libs\baidumapapi_cloud_v3_6_1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="387e4f255e65a144c164e3c67a794e9ad2445c2d">
+        <dex dex="D:\workspace\android\github\GasStation\app\build\intermediates\pre-dexed\debug\baidumapapi_cloud_v3_6_1_3ef92f22e1d19bb6c5dacc182aea0236908900a9.jar" />
     </item>
     <item
         jar="C:\Users\optiplex9020\.gradle\caches\modules-2\files-2.1\com.nineoldandroids\library\2.4.0\e9b63380f3a242dbdbf103a2355ad7e43bad17cb\library-2.4.0.jar"
         jumboMode="false"
         revision="23.0.2"
         sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
-        <dex dex="D:\workspace\android\GasStation\app\build\intermediates\pre-dexed\release\library-2.4.0_b891802b71fde3b1f5bb647c3fec0f6a64b3141c.jar" />
+        <dex dex="D:\workspace\android\github\GasStation\app\build\intermediates\pre-dexed\debug\library-2.4.0_b891802b71fde3b1f5bb647c3fec0f6a64b3141c.jar" />
     </item>
     <item
-        jar="D:\workspace\android\GasStation\app\build\intermediates\exploded-aar\com.joanzapata.iconify\android-iconify\2.1.1\jars\classes.jar"
+        jar="D:\workspace\android\github\GasStation\app\build\intermediates\exploded-aar\GasStation\enhanced-edittext-debug\unspecified\jars\classes.jar"
         jumboMode="false"
         revision="23.0.2"
-        sha1="3e9db26c95288c1954e7de86d9e94e1259fb608b">
-        <dex dex="D:\workspace\android\GasStation\app\build\intermediates\pre-dexed\release\com.joanzapata.iconify-android-iconify-2.1.1_69c6f59b66d84b038cfd9859a5ebc775b4a5ea80.jar" />
+        sha1="6b33a297a5fe4d3c7deead8e49beea507166d204">
+        <dex dex="D:\workspace\android\github\GasStation\app\build\intermediates\pre-dexed\debug\GasStation-enhanced-edittext-debug-unspecified_2f73164d7fae1878b247af89f71c563e451fe06c.jar" />
     </item>
     <item
-        jar="C:\Users\optiplex9020\.gradle\caches\modules-2\files-2.1\com.sun.codemodel\codemodel\2.6\cde4647fcebedb3663bccc79e21789e8e6755a19\codemodel-2.6.jar"
+        jar="D:\workspace\android\github\GasStation\app\libs\baidumapapi_map_v3_6_1.jar"
         jumboMode="false"
         revision="23.0.2"
-        sha1="cde4647fcebedb3663bccc79e21789e8e6755a19">
-        <dex dex="D:\workspace\android\GasStation\app\build\intermediates\pre-dexed\release\codemodel-2.6_44ada8c35fb3821c7951bf5a5fa0d437882ff255.jar" />
-    </item>
-    <item
-        jar="D:\workspace\android\GasStation\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
-        <dex dex="D:\workspace\android\GasStation\app\build\intermediates\pre-dexed\release\com.android.support-support-v4-23.1.1_f3e1e62be6b8cec1269c5278f27740aa3a5583ed.jar" />
-    </item>
-    <item
-        jar="D:\workspace\android\GasStation\app\libs\baidumapapi_base_v3_6_1.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="683a7fe2d903826fc8ff46832b0be142d4b6576d">
-        <dex dex="D:\workspace\android\GasStation\app\build\intermediates\pre-dexed\release\baidumapapi_base_v3_6_1_a751014c811f6bde326989ae27a7b333dc95a8d8.jar" />
-    </item>
-    <item
-        jar="D:\workspace\android\GasStation\app\build\intermediates\exploded-aar\GasStation\MaterialDesign-release\unspecified\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="3d74c38135f3fc4a2513329abd50d0b663643975">
-        <dex dex="D:\workspace\android\GasStation\app\build\intermediates\pre-dexed\release\GasStation-MaterialDesign-release-unspecified_a44f215e3350c349b39b29461ac624bab2872bfe.jar" />
-    </item>
-    <item
-        jar="D:\workspace\android\GasStation\app\build\intermediates\exploded-aar\com.joanzapata.iconify\android-iconify-fontawesome\2.1.1\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="4decf26d94403923b7a3362a9ec5c96af29647f9">
-        <dex dex="D:\workspace\android\GasStation\app\build\intermediates\pre-dexed\release\com.joanzapata.iconify-android-iconify-fontawesome-2.1.1_d8df79d8319ca0006f12478e159551a611cd2074.jar" />
-    </item>
-    <item
-        jar="D:\workspace\android\GasStation\app\libs\locSDK_6.13.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="2cdb37444b41b42e1ce5a8a27e5d3c22e1c57479">
-        <dex dex="D:\workspace\android\GasStation\app\build\intermediates\pre-dexed\release\locSDK_6.13_f438f9e0e60586b495cfc89de92017dce965461a.jar" />
-    </item>
-    <item
-        jar="D:\workspace\android\GasStation\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\libs\internal_impl-23.1.1.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
-        <dex dex="D:\workspace\android\GasStation\app\build\intermediates\pre-dexed\release\internal_impl-23.1.1_4e90e028edca44ff70925a785d43ae9c0c506722.jar" />
+        sha1="23ebff6260f4903de73a88f877f7c32025205c53">
+        <dex dex="D:\workspace\android\github\GasStation\app\build\intermediates\pre-dexed\debug\baidumapapi_map_v3_6_1_e871b6d96074a28d1e0fd965fe7e753ad626f7c0.jar" />
     </item>
     <item
         jar="D:\workspace\AndroidSDK\extras\android\m2repository\com\android\support\support-annotations\23.1.1\support-annotations-23.1.1.jar"
         jumboMode="false"
         revision="23.0.2"
         sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
-        <dex dex="D:\workspace\android\GasStation\app\build\intermediates\pre-dexed\release\support-annotations-23.1.1_4a5b1b23d654ec0d10cf6c7c4b851ef994841c72.jar" />
-    </item>
-    <item
-        jar="D:\workspace\android\GasStation\app\build\intermediates\exploded-aar\com.joanzapata.iconify\android-iconify-material-community\2.1.1\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="2b225485d130565fae03724d35a312570dd79d93">
-        <dex dex="D:\workspace\android\GasStation\app\build\intermediates\pre-dexed\release\com.joanzapata.iconify-android-iconify-material-community-2.1.1_f239bdb622e13350af0f09e2275725cc99f0557e.jar" />
+        <dex dex="D:\workspace\android\github\GasStation\app\build\intermediates\pre-dexed\debug\support-annotations-23.1.1_4a5b1b23d654ec0d10cf6c7c4b851ef994841c72.jar" />
     </item>
     <item
         jar="C:\Users\optiplex9020\.gradle\caches\modules-2\files-2.1\org.androidannotations\androidannotations-api\3.3.2\7d6149d856b880bbd676047aacb8446a758fbbdb\androidannotations-api-3.3.2.jar"
         jumboMode="false"
         revision="23.0.2"
         sha1="7d6149d856b880bbd676047aacb8446a758fbbdb">
-        <dex dex="D:\workspace\android\GasStation\app\build\intermediates\pre-dexed\release\androidannotations-api-3.3.2_7eebba634520aa14f67eade985c865ae5d000126.jar" />
+        <dex dex="D:\workspace\android\github\GasStation\app\build\intermediates\pre-dexed\debug\androidannotations-api-3.3.2_7eebba634520aa14f67eade985c865ae5d000126.jar" />
     </item>
     <item
-        jar="D:\workspace\android\GasStation\app\libs\baidumapapi_search_v3_6_1.jar"
+        jar="D:\workspace\android\github\GasStation\app\build\intermediates\exploded-aar\com.joanzapata.iconify\android-iconify-material-community\2.1.1\jars\classes.jar"
         jumboMode="false"
         revision="23.0.2"
-        sha1="ae35daa343eece79419b1491c64ffe84c3707c50">
-        <dex dex="D:\workspace\android\GasStation\app\build\intermediates\pre-dexed\release\baidumapapi_search_v3_6_1_ad3941abc58abbbe6da804d2665bdedef9b43f01.jar" />
+        sha1="2b225485d130565fae03724d35a312570dd79d93">
+        <dex dex="D:\workspace\android\github\GasStation\app\build\intermediates\pre-dexed\debug\com.joanzapata.iconify-android-iconify-material-community-2.1.1_f6625632d44673d8f725d42a5d1d98980612f39f.jar" />
     </item>
     <item
-        jar="D:\workspace\android\GasStation\app\libs\baidumapapi_cloud_v3_6_1.jar"
+        jar="C:\Users\optiplex9020\.gradle\caches\modules-2\files-2.1\com.sun.codemodel\codemodel\2.6\cde4647fcebedb3663bccc79e21789e8e6755a19\codemodel-2.6.jar"
         jumboMode="false"
         revision="23.0.2"
-        sha1="387e4f255e65a144c164e3c67a794e9ad2445c2d">
-        <dex dex="D:\workspace\android\GasStation\app\build\intermediates\pre-dexed\release\baidumapapi_cloud_v3_6_1_cd56ec280171b7796594aab6ed8b46d472ec6d85.jar" />
+        sha1="cde4647fcebedb3663bccc79e21789e8e6755a19">
+        <dex dex="D:\workspace\android\github\GasStation\app\build\intermediates\pre-dexed\debug\codemodel-2.6_44ada8c35fb3821c7951bf5a5fa0d437882ff255.jar" />
     </item>
     <item
-        jar="D:\workspace\android\GasStation\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\jars\classes.jar"
+        jar="D:\workspace\android\github\GasStation\app\libs\baidumapapi_base_v3_6_1.jar"
         jumboMode="false"
         revision="23.0.2"
-        sha1="5c5699834e9722f1c288fea2de82725d078ba127">
-        <dex dex="D:\workspace\android\GasStation\app\build\intermediates\pre-dexed\release\com.android.support-appcompat-v7-23.1.1_fe9783d616a3751dd21a5e97e91a24b5da12a998.jar" />
+        sha1="683a7fe2d903826fc8ff46832b0be142d4b6576d">
+        <dex dex="D:\workspace\android\github\GasStation\app\build\intermediates\pre-dexed\debug\baidumapapi_base_v3_6_1_8c4c7d50da10bcc17a022188dcee4e8b03c351ac.jar" />
     </item>
     <item
-        jar="D:\workspace\android\GasStation\app\libs\baidumapapi_radar_v3_6_1.jar"
+        jar="D:\workspace\android\github\GasStation\app\libs\baidumapapi_radar_v3_6_1.jar"
         jumboMode="false"
         revision="23.0.2"
         sha1="1798aaeab5d68706f7e5be9399590f1b41df5053">
-        <dex dex="D:\workspace\android\GasStation\app\build\intermediates\pre-dexed\release\baidumapapi_radar_v3_6_1_169b8087fbc0a095413762cfb338de197c442f96.jar" />
+        <dex dex="D:\workspace\android\github\GasStation\app\build\intermediates\pre-dexed\debug\baidumapapi_radar_v3_6_1_ac25036ee09ac02e15a9a854187fa96e4bcd9d6b.jar" />
     </item>
     <item
-        jar="D:\workspace\android\GasStation\app\libs\baidumapapi_util_v3_6_1.jar"
+        jar="C:\Users\optiplex9020\.gradle\caches\modules-2\files-2.1\org.androidannotations\androidannotations\3.3.2\706cdedef47f934b9f6627cc3dd6db0a752a47e4\androidannotations-3.3.2.jar"
         jumboMode="false"
         revision="23.0.2"
-        sha1="0f0b934deaefab0513860d85cd1f4bcd83fc1003">
-        <dex dex="D:\workspace\android\GasStation\app\build\intermediates\pre-dexed\release\baidumapapi_util_v3_6_1_57c83ad9a37c04e4c987b6c5731f431e7c2ecce0.jar" />
+        sha1="706cdedef47f934b9f6627cc3dd6db0a752a47e4">
+        <dex dex="D:\workspace\android\github\GasStation\app\build\intermediates\pre-dexed\debug\androidannotations-3.3.2_a4baefd6d747987793bf94b007ca9e5b720c8e01.jar" />
     </item>
 
 </items>
